@@ -1,31 +1,31 @@
 import React from 'react';
 import './App.css';
+import Instructions from '../Instructions/Instructions.js';
 
 const displayEmojiName = event => alert(event.target.id);
 const emojis = [
   {
-    emoji: "😀",
-    name: "grinning face"
+    emoji: '😀',
+    name: "test grinning face"
   },
   {
-    emoji: "🎉",
+    emoji: '🎉',
     name: "party popper"
   },
   {
-    emoji: "💃",
+    emoji: '💃',
     name: "woman dancing"
   }
 ];
 
-
 function App() {
   const greeting = "greeting";
-  const displayAction = true;
+  const displayAction = false;
   return(
-    <div className="App-header">
-      <h1 id={greeting}>Instill Learning</h1>
-      <p>Hello World!</p>
+    <div className="container">
+      <h1 id={greeting}>Hello, World</h1>
       {displayAction && <p>I am writing JSX</p>}
+      <Instructions />
       <ul>
         {
           emojis.map(emoji => (
