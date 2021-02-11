@@ -1,4 +1,4 @@
-# reactjs-training-sample abc
+# reactjs-training-sample
 
 # Getting Started with Create React App
 
