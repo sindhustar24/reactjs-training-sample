@@ -18,7 +18,7 @@ const emojis = [
   }
 ];
 
-function App() {
+const App = () => {
   const greeting = "greeting";
   const displayAction = false;
   return(
